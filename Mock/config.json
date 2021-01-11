@@ -1,0 +1,15 @@
+[{
+
+	"request":
+		{
+			"uri":"/login"
+		},
+	"response":
+		{
+			"text":{
+				"user":"11111",
+				"pass":"2222",
+				"message":"this is test"
+			}
+		}
+}]

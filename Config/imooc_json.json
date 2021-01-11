@@ -1,0 +1,53 @@
+{
+    "login": {
+        "status": 1,
+        "data": {
+            "start": null,
+            "next": null,
+            "red_packet_wap_url": "https:\/\/m.imooc.com\/act\/rain2020?act=2",
+            "master_url": "https:\/\/m.imooc.com\/act\/nov2020",
+            "master_pic": "https:\/\/img.mukewang.com\/5f87ca6700011cee01080129.png",
+            "master_side_pic": "https:\/\/img.mukewang.com\/5f87c9a70001fe8b01080129.png",
+            "draw_pic": "https:\/\/img.mukewang.com\/5f87ca570001286f04850177.gif",
+            "user_status": "success",
+            "act_end_time": 1604505599
+        },
+        "errorCode": 10001,
+        "errorDesc": "\u6210\u529f",
+        "timestamp": 1605576708818
+    },
+    "register": {
+        "status": 1,
+        "data": {
+            "start": null,
+            "next": null,
+            "red_packet_wap_url": "https:\/\/m.imooc.com\/act\/rain2020?act=2",
+            "master_url": "https:\/\/m.imooc.com\/act\/nov2020",
+            "master_pic": "https:\/\/img.mukewang.com\/5f87ca6700011cee01080129.png",
+            "master_side_pic": "https:\/\/img.mukewang.com\/5f87c9a70001fe8b01080129.png",
+            "draw_pic": "https:\/\/img.mukewang.com\/5f87ca570001286f04850177.gif",
+            "user_status": "success",
+            "act_end_time": 1604505599
+        },
+        "errorCode": 10001,
+        "errorDesc": "\u6210\u529f",
+        "timestamp": 1605576708818
+    },
+    "api/1.0/Company/GetList": {
+        "status": 1,
+        "data": {
+            "start": null,
+            "next": null,
+            "red_packet_wap_url": "https:\/\/m.imooc.com\/act\/rain2020?act=2",
+            "master_url": "https:\/\/m.imooc.com\/act\/nov2020",
+            "master_pic": "https:\/\/img.mukewang.com\/5f87ca6700011cee01080129.png",
+            "master_side_pic": "https:\/\/img.mukewang.com\/5f87c9a70001fe8b01080129.png",
+            "draw_pic": "https:\/\/img.mukewang.com\/5f87ca570001286f04850177.gif",
+            "user_status": "success",
+            "act_end_time": 1604505599
+        },
+        "errorCode": 10001,
+        "errorDesc": "\u6210\u529f",
+        "timestamp": 1605576708818
+    }
+}
