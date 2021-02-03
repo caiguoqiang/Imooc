@@ -9,7 +9,7 @@ from Until.handle_resualt import handle_resault,handle_result_json,get_result_js
 import json
 from Until.handle_cookie import get_cookie_value,write_cookie
 from Until.handle_header import get_header_value
-
+from Until.condition_data import get_data
 class RunMain():
     def run_case(self):
         #获取行
@@ -19,13 +19,21 @@ class RunMain():
             cookie = None
             get_cookie = None
             header = None
+            depend_data = None
             data = excel_data.get_rows_value(i+2)
             #print(data)
             is_run = data[2]
             if is_run == 'yes':
                 url = data[5]
                 method = data[6]
-                data1 = data[7]
+                is_depend = data[3]
+                data1 = json.loads(data[7])
+                if is_depend:
+                    #获取依赖数据
+                    depend_key = data[4]
+                    depend_data = get_data(is_depend)
+                    data1[depend_key] = depend_data
+
                 except_method = data[10]
                 except_result = data[11]
                 cookie_method = data[8]

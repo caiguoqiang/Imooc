@@ -114,6 +114,16 @@ class HandleExcel():
             num = num+1
         return num
 
+    def get_excel_list(self):
+        """
+        获取到所有行的数据
+        :return:
+        """
+        data_list=[]
+        for i in range(self.get_rows()):
+            data_list.append(self.get_rows_value(i+2))
+        return data_list
+
 
 
 excel_data = HandleExcel()
@@ -123,6 +133,7 @@ if __name__ == '__main__':
     #print(handle_excel.get_rows())
     #data = {"aaa":"bbb"}
     #handle_excel.excel_write_data(2,13,"成功")
-    print(handle_excel.get_columns_value("A"))
-    print(handle_excel.get_rows_number('imooc_003'))
+    #print(handle_excel.get_columns_value("A"))
+    #print(handle_excel.get_rows_number('imooc_003'))
     #print(handle_excel.get_rows_value(4))
+    print(handle_excel.get_excel_list())
