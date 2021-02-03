@@ -114,7 +114,7 @@ class HandleExcel():
             num = num+1
         return num
 
-    def get_excel_list(self):
+    def get_excel_data(self):
         """
         获取到所有行的数据
         :return:
@@ -136,4 +136,4 @@ if __name__ == '__main__':
     #print(handle_excel.get_columns_value("A"))
     #print(handle_excel.get_rows_number('imooc_003'))
     #print(handle_excel.get_rows_value(4))
-    print(handle_excel.get_excel_list())
+    print(handle_excel.get_excel_data()[1])
