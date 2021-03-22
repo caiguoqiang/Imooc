@@ -41,14 +41,11 @@ class HandleExcel():
         data = self.load_excel()[sheet_name[index]]
         return data
 
-    def get_cell_value(self,row,cols,index=None):
-        """
-        获取某个单元格内容
-        :param row:sheet页中的行
-        :param cols:sheet页中的列
-        :return:但会单元格内容对象
-        """
-        data = self.get_sheet_data(index).cell(row = row,column = cols).value
+    def get_cell_value(self,row,cols):
+        '''
+        获取某一个单元格内容
+        '''
+        data = self.get_sheet_data().cell(row=row,column=cols).value
         return data
     def get_rows(self):
         """
@@ -92,13 +89,13 @@ class HandleExcel():
         :param key: 列号
         :return:某一列值的列表
         """
-        if key ==None:
+        columns_list = []
+        if key == None:
             key = 'A'
-        column_list = []
-        column_list_data = self.get_sheet_data()[key]
-        for i in column_list_data:
-            column_list.append(i.value)
-        return column_list
+        columns_list_data = self.get_sheet_data()[key]
+        for i in columns_list_data:
+            columns_list.append(i.value)
+        return columns_list
 
     def get_rows_number(self,case_id):
         """

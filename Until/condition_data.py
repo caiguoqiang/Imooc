@@ -32,6 +32,7 @@ def get_depend_data(res_data,key):
     :param key:
     :return:
     """
+    print(type(res_data))
     res_data = json.loads(res_data)
     json_exe = parse(key)
     madle = json_exe.find(res_data)
@@ -43,24 +44,26 @@ def get_data(data):
     :param data:
     :return:
     """
+    #print(type(data))
     res_data = depend_data(data)
+    #print(type(res_data))
     rule_data =spilt_data(data)[1]
     return get_depend_data(res_data,rule_data)
 
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     # print(depend_data("imooc_005>data.banner.id"))
-    data = {
-        "a":"a1",
-        "b":"b1",
-        "c":[
-            {
-                "d":"d1"
-            },
-            {
-                "d":"d2"
-            }
-        ]
-    }
-    key="c.[1].d"
-    print(get_depend_data(data,key))
+    # data = {
+    #     "a":"a1",
+    #     "b":"b1",
+    #     "c":[
+    #         {
+    #             "d":"d1"
+    #         },
+    #         {
+    #             "d":"d2"
+    #         }
+    #     ]
+    # }
+    # key="c.[1].d"
+    # print(get_depend_data(data,key))
