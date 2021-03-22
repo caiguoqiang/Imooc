@@ -137,9 +137,12 @@ class TestRunCaseDdt(unittest.TestCase):
 if __name__ == '__main__':
     case_path = base_path + "\\Run"
     report_path = base_path + "\\Report\\report.html" #E:\Test\Imooc\Report\report.html
+    print("case_path:"+case_path)
+    print("report_path:" + report_path)
     discover = unittest.defaultTestLoader.discover(case_path, pattern="run_case_*.py")
     # unittest.TextTestRunner().run(discover)
     with open(report_path, "wb") as f:
         runner = HTMLTestRunner.HTMLTestRunner(stream=f, title="caishenran", description="this is test")
         runner.run(discover)
+    f.close()
 
